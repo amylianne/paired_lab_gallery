@@ -5,10 +5,10 @@ public class Gallery {
     private int till;
     private ArrayList<Artwork> stock;
 
-    public Gallery(String name, int till, ArrayList<Artwork> stock){
+    public Gallery(String name, int till){
         this.name=name;
         this.till=till;
-        this.stock=stock;
+        this.stock=new ArrayList<>();
     }
 
     public String getName() {
@@ -33,5 +33,12 @@ public class Gallery {
 
     public void setStock(ArrayList<Artwork> stock) {
         this.stock = stock;
+    }
+
+    public void addArtwork(Artwork artwork){
+        this.stock.add(artwork);
+    }
+    public int getArtworkCount(){
+        return this.stock.size();
     }
 }

@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
 public class Farm {
-
-
     private String name;
     private int eggsForSale;
     private ArrayList<Chicken> chickens;
@@ -35,7 +33,7 @@ public class Farm {
     public int getChickenCount() {
         return this.chickens.size();
     }
-    public void addChicken(Chicken chicken){
+    public void addChicken(Chicken chicken){ //add chickens to creates array
         this.chickens.add(chicken);
     }
 }
