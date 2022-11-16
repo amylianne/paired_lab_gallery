@@ -41,4 +41,9 @@ public class Gallery {
     public int getArtworkCount(){
         return this.stock.size();
     }
+
+    public void addTill(int price) {
+        this.till = (till+price);
+    }
+
 }
